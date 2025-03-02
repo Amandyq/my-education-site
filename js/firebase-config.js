@@ -1,13 +1,18 @@
+// Firebase SDK-ны жүктегенімізге көз жеткіземіз
+if (typeof firebase === "undefined") {
+    console.error("Firebase SDK дұрыс жүктелмеді!");
+}
+
+// Firebase конфигурациясы
 const firebaseConfig = {
-    apiKey: "Сіздің_API_кілт",
+    apiKey: "СІЗДІҢ_API_KEY",
     authDomain: "my-education-site.firebaseapp.com",
     projectId: "my-education-site",
     storageBucket: "my-education-site.appspot.com",
-    messagingSenderId: "Сіздің_Sender_ID",
-    appId: "Сіздің_App_ID"
+    messagingSenderId: "СІЗДІҢ_SENDER_ID",
+    appId: "СІЗДІҢ_APP_ID"
 };
 
-// Firebase бастау
+// Firebase-ды бастау
 firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
 const auth = firebase.auth();
