@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тіркелу | My Education Site</title>
+    <title>Тіркелу</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <header>
-        <img src="images/logo.png" alt="Логотип" class="logo">
+        <h1>Тіркелу</h1>
     </header>
 
     <main>
-        <h2>Тіркелу</h2>
-        <form id="register-form">
-            <input type="text" id="name" placeholder="Аты-жөніңіз" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Құпия сөз" required>
-            <button type="submit">Тіркелу</button>
-        </form>
-        <p>Аккаунтың бар ма? <a href="login.html">Кіру</a></p>
+        <input type="email" id="register-email" placeholder="Email">
+        <input type="password" id="register-password" placeholder="Құпиясөз">
+        <button id="register-btn">Тіркелу</button>
+
+        <p>Аккаунтыңыз бар ма? <a href="login.html">Кіру</a></p>
     </main>
 
-    <script src="js/scripts.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+
 </body>
 </html>
